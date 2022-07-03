@@ -1,0 +1,28 @@
+{
+  "name": "omdb-project",
+  "version": "1.0.0",
+  "description": "This is an End to end SPA project with OMDB API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedivloop/omdb-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thedivloop/omdb-project/issues"
+  },
+  "homepage": "https://github.com/thedivloop/omdb-project#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "jest": "^28.1.2",
+    "puppeteer": "^15.3.0"
+  }
+}
