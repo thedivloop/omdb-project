@@ -7,6 +7,7 @@ This is an End to end SPA project with OMDB API.
 - [x] Check OMDB API
 - [x] Specify the app
 - [x] Design UI
+- [x] Initiate and install `npm` packages
 - [ ] Unit tests (jest)
 - [ ] E2E tests (puppeteer)
 
@@ -82,12 +83,18 @@ TDD (test driven development) will be used at unit level to generate implementat
 
 [Figma Prototype](https://www.figma.com/proto/CGAdWFu6b72RaxUOST9M7V/omdb-api?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2)
 
-### 3.4 Unit tests (jest)
+### 3.4 Initialize
+
+- [x] Initialize npm
+- [x] Install production dependencies
+- [x] Install development dependencies
+
+### 3.5 Unit tests (jest)
 
 - [ ] Prepare stubs (download results for tests)
 - [ ]
 
-### 3.5 E2E tests (puppeteer)
+### 3.6 E2E tests (puppeteer)
 
 - [ ] Define DOM handles for E2E testing
 - [ ] Create tests based on user stories
