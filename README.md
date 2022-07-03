@@ -2,20 +2,102 @@
 
 This is an End to end SPA project with OMDB API.
 
-## Todos
+## 1. Todos
 
 - [x] Check OMDB API
 - [ ] Specify the app
 - [ ] Design UI
+- [ ] Unit tests (jest)
+- [ ] E2E tests (puppeteer)
 
-## References
+## 2. Specifications
 
-### OMDB API
+### 2.1 User stories and requirements
+
+1. As a user I can search for a movie by title in order to retrieve max 10 results
+2. As a user I can reset the result in order to clear the search field and remove the results from the screen.
+3. The SPA is to be responsive on phones and tablets.
+
+### 2.2 Technology
+
+The technology used will include:
+
+- HMTL
+- CSS
+- Javascript in version 1
+- ReactJS in version 2
+
+The required packages are:
+
+- nodeJS
+- nodemon
+- jest
+- puppeeter
+- axios
+- dotenv
+
+### 2.3 Implementation details
+
+This is a simple JS stack, we will use nodeJS so that we can run the depencies packages on both Dev and production.
+We will do `GET` requests with query parameters to submit a search (`?s=`). The API key is passed as a query parameter as well. For the `HTTP` requests axios will be used.
+The user keys the title of the movie in the search field and clicks search to retrieve the results.
+The result is then displayed through designed cards (max 10 by OMDB API limitation).
+On top of the results is to be written "Results for 'mission' ".
+The user can clear the result by clicking reset which will delete the search term in the search field and remove the result cards.
+
+For responsiveness `flexbox` will be implemented as well as media queries as required.
+
+JS uses HTML IDs handles and CSS uses class handles.
+
+Clean code precepts are applied and functional programming is implemented. No class required in this code.
+
+### 2.4 Development process
+
+Design will be done through Figma using the UI/UX principles.
+
+An NPM project will be initiated and the required packages installed.
+
+TDD (test driven development) will be used at unit level to generate implementation code. For that jest with `--watch` and `--coverage` will be used.
+
+## 4. Project Steps
+
+### Check OMDB API
+
+- [x] Review the OMDB API and the way it works.
+- [x] Get an API key
+
+### Specify the app
+
+- [x] Define technology
+- [x] Define implementation details
+
+### Design UI
+
+- [ ] Define the overall wireframe
+- [ ] Define color palette
+- [ ] Define screen areas
+- [ ] Create a Prototype
+- [ ] Add developer indications (sizes, position, colors)
+
+### Unit tests (jest)
+
+- [ ] Prepare stubs (download results for tests)
+- [ ]
+
+### E2E tests (puppeteer)
+
+- [ ] Define DOM handles for E2E testing
+- [ ] Create tests based on user stories
+
+## 3. References
+
+### 3.1 OMDB API
 
 Uri: `http://www.omdbapi.com/`
 Key: "ff436551"
+Search parameter
 
-### Stubs
+### 3.2 Stubs
 
 "http://www.omdbapi.com/?apikey=ff436551&s=mission"
 
