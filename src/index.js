@@ -1,6 +1,6 @@
-// const { missionSearch } = require("./fixtures");
-// const axios = require("axios").default;
-// const { API_KEY } = require("./config.js");
+const { missionSearch } = require("./fixtures");
+const axios = require("axios").default;
+const { API_KEY } = require("./config.js");
 
 function testConsole() {
   console.log("good!");
@@ -23,8 +23,7 @@ async function search() {
     reset();
     return;
   }
-  var queryResult = await fetchTitle(searchWord);
-  console.log(queryResult);
+  var queryResult = await queryTitle(searchWord);
   if (queryResult.Response == "True") {
     document.getElementById("results-list").innerHTML = generateHTMLImagesLis(
       getPostersURI(queryResult)
@@ -54,7 +53,6 @@ async function queryTitle(title) {
   const data = await axios.get(
     `http://www.omdbapi.com/?apikey=${API_KEY}&s=${title}`
   );
-  console.log(data.data);
   return data.data;
 }
 
@@ -79,15 +77,15 @@ function generateHTMLImagesLis(postersUriList) {
   return generatedHTMLCode;
 }
 
-// module.exports = {
-//   testConsole,
-//   search,
-//   reset,
-//   validateInput,
-//   queryTitle,
-//   getPostersURI,
-//   generateHTMLImagesLis,
-// };
+module.exports = {
+  testConsole,
+  search,
+  reset,
+  validateInput,
+  queryTitle,
+  getPostersURI,
+  generateHTMLImagesLis,
+};
 
 /* 
 TODOS: validate input when clicked search
