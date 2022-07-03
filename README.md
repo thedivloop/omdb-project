@@ -88,6 +88,8 @@ TDD (test driven development) will be used at unit level to generate implementat
 - [x] Initialize npm
 - [x] Install production dependencies
 - [x] Install development dependencies
+- [ ] Create index.js
+- [ ] Create index.html
 
 ### 3.5 Unit tests (jest)
 

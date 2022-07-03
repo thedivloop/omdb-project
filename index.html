@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Picker</title>
+    <script src="./script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Movie Picker</h1>
+    </header>
+    <section class="search-section">
+      <h2>Look for your favorite movie!</h2>
+      <div class="search-area">
+        <input
+          id = "search-word"
+          class="search-field"
+          type="text"
+          placeholder="...enter the movie title"
+        />
+        <button id="search-button" class="search-button" type="">search</button>
+        <button id="reset-button"" class="reset-button" type="">reset</button>
+      </div>
+      <div class="result-area">
+        <p class="result-term">
+          Results for: “<span id="search-for"></span>”
+        </p>
+        <div id="results-list" class="results">
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
