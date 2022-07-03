@@ -5,8 +5,8 @@ This is an End to end SPA project with OMDB API.
 ## 1. Todos
 
 - [x] Check OMDB API
-- [ ] Specify the app
-- [ ] Design UI
+- [x] Specify the app
+- [x] Design UI
 - [ ] Unit tests (jest)
 - [ ] E2E tests (puppeteer)
 
@@ -59,45 +59,49 @@ An NPM project will be initiated and the required packages installed.
 
 TDD (test driven development) will be used at unit level to generate implementation code. For that jest with `--watch` and `--coverage` will be used.
 
-## 4. Project Steps
+## 3. Project Steps
 
-### Check OMDB API
+### 3.1 Check OMDB API
 
 - [x] Review the OMDB API and the way it works.
 - [x] Get an API key
 
-### Specify the app
+### 3.2 Specify the app
 
 - [x] Define technology
 - [x] Define implementation details
 
-### Design UI
+### 3.3 Design UI
 
-- [ ] Define the overall wireframe
-- [ ] Define color palette
-- [ ] Define screen areas
-- [ ] Create a Prototype
+- [x] Define the overall wireframe
+- [x] Define color palette
+- [x] Define screen areas
+- [x] Create a Prototype
 - [ ] Add developer indications (sizes, position, colors)
 
-### Unit tests (jest)
+[Figma Design](https://www.figma.com/file/CGAdWFu6b72RaxUOST9M7V/omdb-api?node-id=0%3A1)
+
+[Figma Prototype](https://www.figma.com/proto/CGAdWFu6b72RaxUOST9M7V/omdb-api?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2)
+
+### 3.4 Unit tests (jest)
 
 - [ ] Prepare stubs (download results for tests)
 - [ ]
 
-### E2E tests (puppeteer)
+### 3.5 E2E tests (puppeteer)
 
 - [ ] Define DOM handles for E2E testing
 - [ ] Create tests based on user stories
 
-## 3. References
+## 4. References
 
-### 3.1 OMDB API
+### 4.1 OMDB API
 
 Uri: `http://www.omdbapi.com/`
 Key: "ff436551"
 Search parameter
 
-### 3.2 Stubs
+### 4.2 Stubs
 
 "http://www.omdbapi.com/?apikey=ff436551&s=mission"
 
