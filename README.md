@@ -30,7 +30,6 @@ The technology used will include:
 The required packages are:
 
 - nodeJS
-- nodemon
 - jest
 - puppeeter
 - axios
